@@ -1,0 +1,5 @@
+f=open("D:/邀请函.txt","a+")
+data=f.write("诚挚邀请您来参加本次宴会")
+f.write("\nbest regards\n ")
+f.write("贾澎旭")
+f.close()

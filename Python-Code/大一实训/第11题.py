@@ -1,0 +1,16 @@
+from turtle import *
+
+penup()
+goto(-150,60)
+pensize(3)
+pencolor("black")
+pendown()
+fd(200)
+right(90)
+fd(200)
+right(90)
+fd(200)
+right(90)
+fd(200)
+hideturtle()
+done()
