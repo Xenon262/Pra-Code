@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type="text/css">
+        /* 后代选择器：用于指定元素所有的后代元素 */
+        /* div span{
+            color: red;
+        } */
+        /* 子元素选择器：用于选择元素指定的类型的所有后代元素 */
+        div>span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hello World
+        <span>
+            世界你好！
+            <span>XXXX</span>
+        </span>
+    </div>
+    <div>
+        Hello World
+        <P>
+            <em>
+                <span>你好世界！</span>
+            </em>
+        </P>
+    </div>
+</body>
+</html>

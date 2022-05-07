@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恋人相册</title>
+    <style type="text/css">
+        body{
+            background-color: pink;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background: url(img/相册/c1.png);
+            background-size: 100% 100%;
+            margin: 120px auto;
+            padding: 100px;
+            /* 相框的边框 */
+            border: 10px solid blueviolet;
+            /* 单独设置边框 */
+            border-top: 10px solid red;
+            border-left: 10px solid yellow;
+            border-bottom: 10px solid cadetblue;
+            border-right: 10px solid navajowhite;
+            /* 圆角半径 */
+            border-radius: 50px;
+            /* 阴影 */
+            box-shadow: 10px 10px 10px black;
+            /* 旋转360度 */
+            transform: rotate(110deg);
+            /* 过渡效果 */
+            /* all：规定设置过渡效果的CSS属性的名称
+               0.5s：规定完成过渡效果需要的时间（s）
+               ease-in：规定速度效果的速度曲线
+             */
+            transition: all 0.5s ease-in;
+        }
+        /* 鼠标悬停事件 */
+        .box:hover{
+            /* 鼠标放上去的结果 */
+            transform: rotate(360deg) scale(1.5);
+            /* 替换背景图片 */
+            background:url(img/相册/c2.png);
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

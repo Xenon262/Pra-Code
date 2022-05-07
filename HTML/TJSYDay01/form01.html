@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<HEAD>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<title>表单标签</title>
+	</head>
+	<body>
+		<form action="http://www.jd.com" method="get">
+			<!-- readonly="readonly"表示只读属性 -->
+			姓名:<input type="text" name="username" value="倪天臣" readonly="readonly" /></br>
+			密码:<input type="password" name="password" /></br>
+			性别:<input type="radio" name="gender" value="male" />男
+				 <input type="radio" name="gender" value="female" />女</br>
+			爱好:<input type="checkbox" name="like" value="sing" />唱歌
+			     <input type="checkbox" name="like" value="dance" />跳舞
+			     <input type="checkbox" name="like" value="playbaskeyball" />打篮球</br>
+			上传文件:<input type="file" /></br>
+			按钮:<input type="button" value="点击提交" /></br>
+			隐藏框:<input type="hidden" value="3" /></br>
+			图片提交框:<input type="image" src="1.jpg" /></br>
+			城市信息:
+			<!-- size表示下拉框显示 -->
+			<!-- multiple表示可以选中多个值 -->
+			<select name="city" size="3" multiple="multiple">
+				<option value="bj">北京</option>
+				<!-- selected="selected"表示页面默认的显示 -->
+				<option value="xa" selected="selected">西安</option>
+				<option value="cd">成都</option>
+				<option value="wh">武汉</option>
+				<option value="tj">天津</option>
+			</select></br>
+			自我介绍:
+			<textarea cols="60" rows="20">这是一个文本域</textarea></br>
+			提交:<input type="submit" /></br>
+			重置:<input type="reset" />
+		</form>
+	</body>
+</html>

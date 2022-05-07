@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child选择器</title>
+    <style type="text/css">
+        /* nth-child（n）选择器：匹配的是其父元素的第n个子元素 */
+        /* 属于其父元素的第二个子元素 */
+        /* 匹配的是其父元素中的第一个元素，并不是第一个p元素 */
+        p:nth-child(2){
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>这是标题</h1>
+    <p>这是段落1</p>
+    <p>这是段落2</p>
+    <p>这是段落3</p>
+    <p>这是段落4</p>
+</body>
+</html>

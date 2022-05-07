@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静态定位</title>
+    <style type="text/css">
+        /* HTML元素默认情况下的定位方式是static（静态）
+           静态定位的元素不受top、bottom、left、right属性的影响
+           position: static;的元素不会以任何特殊方式定位，它始终是根据页面的正常流进行定位的
+        */
+        div{
+            position: static;
+            border: 3px solid #73AD21;
+            top: 20px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">这个div元素设置position:static</div>
+</body>
+</html>

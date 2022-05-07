@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外卖小哥</title>
+    <style>
+        body{
+            background-color: lightskyblue;
+            /* 溢出隐藏 */
+            overflow: hidden;
+        }
+        .tree{
+            width: 40%;
+            position: absolute;
+            left: 35%;
+            bottom: -13%;
+        }
+        .xr{
+            width: 10%;
+            position: absolute;
+            bottom: 0;
+            left: -10%;
+            /* 动画名称    所需时间    运动形式     运动执行次数
+               运动形式：
+                        ease：逐渐慢下来
+                        ease-in-out：先慢到快再到慢
+                        ease-in：由慢到快
+                        linear：均速
+                        ease-out：由快倒慢*/
+            animation: move 3s linear infinite;
+        }
+        @keyframes move{
+            form{left: 0%;}
+            to{left: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <img src="img/b.png" class="tree" />
+    <img src="img/a.png" class="xr" />
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D</title>
+    <style type="text/css">
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #00FF00;
+            margin: 50px auto;
+            /* 先位移，后旋转 */
+            /* transform: translateX(200px) rotate(45deg); */
+            /* 先旋转，后位移 */
+            /* transform: rotate(45deg) translateX(200px); */
+            /* 隐藏 */
+            display: none;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            background-color: #00FF00;
+            /* transform: scale(2) translateX(300px);  */
+            transform: translateX(300px) scale(2);
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

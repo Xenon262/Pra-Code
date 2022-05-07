@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>立方体</title>
+    <style type="text/css">
+        section{
+            width: 300px;
+            height: 300px;
+            background-color: #000000;
+            margin: 200px auto;
+            /* 父元素是相对定位 */
+            position: relative;
+            /* 设定3D环境 */
+            transform-style: preserve-3d;
+            transform: rotateY(75deg);
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            color: white;
+            /* 水平居中 */
+            text-align: center;
+            /* 垂直居中 */
+            line-height: 300px;
+            font-size: 50px;
+            /* 子元素是绝对定位 */
+            position:absolute;
+            left: 0;
+            right: 0;
+            /* 样式过渡 */
+            transition: 20s;
+        }
+        section:hover div:nth-child(1){
+            background-color: red;
+            transform: translateZ(150px);
+        }
+        section:hover div:nth-child(2){
+            background-color: orange;
+            transform: translateZ(-150px);
+        }
+        section:hover div:nth-child(3){
+            background-color: yellow;
+            transform: rotateY(90deg) translateZ(150px);
+        }
+        section:hover div:nth-child(4){
+            background-color: green;
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+        section:hover div:nth-child(5){
+            background-color: blue;
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+        section:hover div:nth-child(6){
+            background-color: purple;
+            transform: rotateX(90deg) translateZ(150px);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <!-- 3D 环境 -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </section>
+</body>
+</html>

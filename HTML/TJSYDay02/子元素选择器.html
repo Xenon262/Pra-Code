@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子元素选择器</title>
+    <style type="text/css">
+        /* 将div的子元素span设置样式 */
+        /* 子元素选择器：选中指定父元素的指定子元素 */
+        /* 子元素选择器使用>作为连接符，子元素选择器只能选择作为某元素子元素的元素 */
+        div>span{
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>我是div标签中的span</span>
+        <p><span>我是p标签中的span</span></p>
+    </div>
+    <span>我是body中的span</span>
+</body>
+</html>

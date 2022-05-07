@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>div演示</title>
+		<style type="text/css">
+			/* 第二种引入方式 */
+			/* div{
+				color: #aaabbc;
+				background-color: #DD12FF;
+			} */
+			
+			/* 第四种引入方式 */
+			@import url("css/hello.css");
+		</style>
+		<!-- 第三种引入方式 -->
+		<!-- <link rel="stylesheet" href="css/hello.css" /> -->
+	</head>
+	<body>
+		<!-- 第一种引入方式 -->
+		<!-- 引入方式之间有优先级,如果修改同一个元素谁离的近那么谁先生效 -->
+		<div style="color: #ABC123;background: #11FFF2;">我是一个div</div>
+		<div>我是一个div</div>
+		<div>我是一个div</div>
+		<span>我是一个span</span>
+		<span>我是一个span</span>
+		<span>我是一个span</span>
+		<p>我是一个p元素</p>
+		<p>我是一个p元素</p>
+		<p>我是一个p元素</p>
+	</body>
+</html>

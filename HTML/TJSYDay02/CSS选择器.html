@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css选择器</title>
+    <style type="text/css">
+        /* 基本选择器 */
+        /* 1.id选择器 */
+        /* #div1{
+            color: #DBCFAA;
+            background-color:lightblue;
+        } */
+        /* 2.类选择器 */
+        /* .class2{
+            color: #DBCFAA;
+            background-color:lightblue ;
+        } */
+        /* 3.元素名称选择器 */
+        /* div{
+            color: #aqua;
+            background-color: lightblue;
+        } */
+
+        /* 扩展选择器 */
+        /* 1.后代选择器 */
+        /* div span{
+            color: #aqua;
+            background-color: lightblue; 
+        } */
+        /* 2.子元素选择器 */
+        /* div>span{
+            color: #aqua;
+            background-color: lightblue; 
+        } */
+        /* 3.相邻兄弟选择器 */
+        /* div+span{
+            color: aqua;
+            background-color: lightblue;
+        } */
+        /* 4.属性选择器 */
+        /* div[name="kk"]{
+            color: aqua;
+            background-color: lightblue;
+        }
+        div[name="xx"]{
+            color: aqua;
+            background-color: lightblue;
+        } */
+    </style>
+</head>
+<body>
+    <div id="div1">我是div1</div>
+    <div class="class1">我是div2</div>
+    <div class="class2">我是div3</div>
+
+    <div>
+        这是父级div
+        <span>这是子级span</span>
+        <span>这是子级span</span>
+    </div>
+    <span>这是父级span</span>
+
+    <div>
+        <span>我是子级span</span>
+        <p>
+            <span>我是p标签中的span</span>
+            <span>
+                <p>我是span标签中的p标签</p>
+            </span>
+        </p>
+    </div>
+
+    <span>XcX</span>
+
+    <div name="kk">
+        这是卡卡
+    </div>
+    <div name="xx">
+        这是嘻嘻
+    </div>
+</body>
+</html>

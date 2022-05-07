@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style type="text/css">
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: #00FF00;
+            /*  animation: play 5s linear infinite;
+                play --- 动画名称（自定义）
+                5s --- 动画执行的时间
+                linear --- 动画在运行速率的函数
+                infinite --- 动画是否无限执行         
+            */
+            animation: play 4s linear infinite;
+        }
+        .box2{
+            width: 500px;
+            height: 500px;
+            background-color: #00ffff;
+            animation: tars 3s linear infinite;
+        }
+        /* 
+            name -- 必须与定义的动画名称保持一致
+            from{} -- 设置的是动画开始的样式
+            to{} -- 设置的是动画结束的样式      
+            from和to可以更改时间节点0%和100%
+         */
+        @keyframes play{
+             /* from{}
+             to{} */
+             0%{}
+             50%{
+                 width: 500px;
+                 height: 100px;
+                 background-color: aqua;
+             }       
+             100%{
+                 width: 300px;
+                 height: 300px;
+                 background-color: lightgreen;
+             }
+        }
+        /* 在同一个页面中可以定义多个动画，并且不同的动画可以定义给不同的标签 */
+        @keyframes play{
+            from{
+                width: 600px;
+                height: 100px;
+                background-color: #3967ff;
+            }
+            to{
+                width: 300px;
+                height: 300px;
+                background-color: #00FF00;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@charset "utf-8";
+body{
+    background:url(../img/摩天轮/2.jpg) ;
+    background-size: cover;
+}
+/* nth-child()选择器：匹配的是其父元素的第n个子元素 */
+div:nth-child(1){
+    width: 768px;
+    height: 768px;
+    background:url(../img/摩天轮/fsw.png);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -384px;
+    animation: play 10s linear infinite ;
+}
+@keyframes play{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+div:nth-child(2){
+    width: 247px;
+    height: 490px;
+    background: url(../img/摩天轮/bracketsmall.png);
+    position: absolute;
+    left: 50%;
+    top: 384px;
+    margin-left: -124px;
+    z-index: -2;
+}
+div:nth-child(3){
+    width: 358px;
+    height: 529px;
+    background: url(../img/摩天轮/bracket.png);
+    position: absolute;
+    left: 50%;
+    margin-left: -183px;
+    top: 384px;
+}
+div:nth-child(4){
+    width: 577px;
+    height: 257px;
+    background:url(../img/摩天轮/big-title.png);
+    position: absolute;
+    left: 50%;
+    margin-left: -288px;
+    top: 270px;
+}
+div:nth-child(5){
+    width: 413px;
+    height: 139px;
+    background: url(../img/摩天轮/title.png);
+    position: absolute;
+    left: 50%;
+    top: 480px;
+    margin-left: -206px;
+
+}
+div:nth-child(6){
+    width: 48px;
+    height: 64px;
+    background: url(../img/摩天轮/arrow.png);
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    margin-left: -24px;
+}
+
+/* 设置li的公共样式 */
+li{
+    width: 130px;
+    height: 170px;
+    position: absolute;
+    /* 清除li默认显示的实心圆 */
+    list-style: none;
+    animation: move 10s linear infinite;
+}
+@keyframes move {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-360deg);}
+}
+/* 每个li的公共样式 */
+li:nth-child(1){
+    background: url(../img/摩天轮/boy.png);
+    left: 320px;
+    top: -30px;
+}
+li:nth-child(2){
+    background: url(../img/摩天轮/girl.png);
+    left: 320px;
+    bottom: -30px;
+}
+li:nth-child(3){
+    background: url(../img/摩天轮/dog.png);
+    top: 300px;
+    left: 0;
+
+}
+li:nth-child(4){
+    background: url(../img/摩天轮/mudog.png);
+    right: 0;
+    top: 300px;
+}
+li:nth-child(5){
+    background: url(../img/摩天轮/girls.png);
+    top: 68px;
+    left: 85px;
+}
+li:nth-child(6){
+    background: url(../img/摩天轮/hairboy.png);
+    top: 68px;
+    right: 85px;
+}
+li:nth-child(7){
+    background: url(../img/摩天轮/mimi.png);
+    bottom: 68px;
+    right: 85px;
+}
+li:nth-child(8){
+    background: url(../img/摩天轮/shamegirl.png);
+    bottom: 68px;
+    left: 85px;
+}

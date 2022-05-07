@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<HEAD>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<title>注册表单</title>
+	</head>
+	<body>
+		<table border="2px" cellspacing="0px" cellpadding="7px" bordercolor="#FF1493" align="center" bgcolor="#F5DEB3" width="600px">
+			<!-- caption用于定义表格中的标题 -->
+			<caption>
+				<h1><font color="#FF1493">注册表单</h1>
+			</caption>
+			<tr>
+				<td>用户名:</td>
+				<td><input type="text" name="username" /></td>
+			</tr>
+			<tr>
+				<td>密码:</td>
+				<td><input type="password" name="password" /></td>
+			</tr>
+			<tr>
+				<td>确认密码:</td>
+				<td><input type="password" name="password1" /></td>
+			</tr>
+			<tr>
+				<td>昵称:</td>
+				<td><input type="text" name="nickname" /></td>
+			</tr>
+			<tr>
+				<td>邮箱:</td>
+				<td><input type="text" name="email" /></td>
+			</tr>
+			<tr>
+				<td>头像:</td>
+				<td><input type="file" name="fx" /></td>
+			</tr>
+			<tr>
+				<td>性别:</td>
+				<td>
+					<input type="radio" name="gender" value="male" />男
+					<input type="radio" name="gender" value="female" />女
+				</td>
+			</tr>
+			<tr>
+				<td>爱好:</td>
+				<td>
+					<input type="checkbox" name="like" value="sing" />唱歌
+					<input type="checkbox" name="like" value="dance" />跳舞
+					<input type="checkbox" name="like" value="playbaskeyball" />打篮球
+				</td>
+			</tr>
+			<tr>
+				<td>所在城市:</td>
+				<td>
+					<select name="city" size="1">
+						<option value="bj">北京</option>
+						<option value="xa">西安</option>
+						<option value="tj" selected="selected">天津</option>
+						<option value="wh">武汉</option>
+						<option value="cd">成都</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>自我介绍:</td>
+				<td>
+					<textarea name="desc" cols="45" rows="5">请输入详细介绍</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="提交" />
+					<input type="reset" value="重置" />
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
